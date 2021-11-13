@@ -43,7 +43,7 @@ const Cart = (props) => {
             className={classes['button--alt']}
             onClick={props.onClose}
         >
-            Colse
+            Close
         </button>
         {hasItems && <button className={classes.button} onClick={orderHnadler}>Order</button>}
     </div>;
