@@ -33,7 +33,7 @@ const Cart = (props) => {
         setIsSubmitting(true)
        // const response =   IMPLEMENT ERROR HANDLING
         await fetch(
-          'https://meals-2-be318-default-rtdb.firebaseio.com/meals.json',
+          'https://meals-2-be318-default-rtdb.firebaseio.com/orders.json',
           {
             method: 'POST',
             body: JSON.stringify({
