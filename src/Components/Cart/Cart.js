@@ -33,13 +33,15 @@ const Cart = (props) => {
         setIsSubmitting(true)
        // const response =   IMPLEMENT ERROR HANDLING
         await fetch(
-          "https://reactmeals-49c7c-default-rtdb.europe-west1.firebasedatabase.app/orders.json", {
-              method: 'POST',
-              body: JSON.stringify({
-                  user: userData,
-                  orderedItems: cartCtx.items
-              })
-        });
+          'https://meals-2-be318-default-rtdb.firebaseio.com/meals.json',
+          {
+            method: 'POST',
+            body: JSON.stringify({
+              user: userData,
+              orderedItems: cartCtx.items,
+            }),
+          }
+        );
         setIsSubmitting(false);
         setDidSubmit(true);
         cartCtx.clearCart();
