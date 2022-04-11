@@ -17,7 +17,7 @@ const AvailableMeals = () => {
 
         // const response = await fetch('https://reactmeals-49c7c-default-rtdb.europe-west1.firebasedatabase.app/meals.json');
         const response = await fetch(
-          'https://meals-2-be318-default-rtdb.firebaseio.com/meals.json'
+          'https://meals-3-default-rtdb.firebaseio.com//meals.json'
         );
 
         if (!response.ok) {

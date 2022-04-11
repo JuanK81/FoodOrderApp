@@ -62,3 +62,13 @@
   border-color: #aa0b20;
   background-color: #ffeff1;
 }
+
+
+@media (max-height: 800px) {
+  .form {
+        max-height: 11rem;
+        /* background-color: olive; */
+
+
+  }
+}
